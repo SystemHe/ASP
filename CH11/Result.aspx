@@ -1,0 +1,26 @@
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Result.aspx.cs" Inherits="Result" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <asp:gridview ID="Gridview1" runat="server">
+        <Columns>
+            <asp:TemplateField HeaderText="所占中票的百分比：">
+                <ItemTemplate>
+                    <%#FormateVoteCount(DataBinder.Eval(Container.DataItem,"NumVote").ToString()) %>%
+                </ItemTemplate>
+            </asp:TemplateField>
+        </Columns>
+        </asp:gridview>
+
+    </div>
+    </form>
+</body>
+</html>

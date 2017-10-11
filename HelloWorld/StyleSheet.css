@@ -1,0 +1,48 @@
+﻿body 
+{
+    text-align:center;
+}
+h1
+{
+    color:Blue;
+    }
+.loginbody
+{
+    margin:20px;
+    padding:20px;
+    border:3px solid red;
+    }
+.title
+{
+    text-align:center;
+    margin:10px;
+    }
+.login
+{
+    text-align:center;
+    border:5px solid red;
+    margin:50px;
+    padding:5px;
+    background-color:Gray;
+    }
+.Label
+{
+    text-align:center;
+    padding:5px;
+    background-color:green;
+    font-style:inherit;
+    font-size:20px;
+    font-family:@华文琥珀;
+    color:red;
+}
+#Button1,#Button3
+{
+    background-color:Green;
+    margin:20px;
+    padding:5px;
+    }
+.fileupload
+{
+    background-color:Teal;
+    padding:10px;
+     }

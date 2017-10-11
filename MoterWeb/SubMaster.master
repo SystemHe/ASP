@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="SubMaster.master.cs" Inherits="SubMaster"  MasterPageFile="~/MainMaster.master"%>
+<%@ MasterType VirtualPath="~/MainMaster.master" %>
+<asp:Content id="Content1" runat="server" ContentPlaceHolderID="MainContent">
+        <table width="889" border="0" align="center" cellpadding="0" cellspacing="0" id="_01">
+        <tr>
+            <td width="279" height="100" style="background-color:Gray">
+                <asp:Label ID="LabelMaster" runat="server" Text="Label" 
+                    onprerender="LabelMaster_PreRender1"></asp:Label>
+                &nbsp;
+            </td>
+            <td width="610" height="100" style="background-color:Yellow">
+                <asp:ContentPlaceHolder ID="SubContent" runat="server">
+                    <h1 style="width:186px">子</h1>
+                    <p>&nbsp</p>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+</asp:Content>
+
